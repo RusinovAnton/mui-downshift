@@ -117,11 +117,11 @@ var Input = function (_Component) {
             { position: 'end' },
             !!downshiftProps.selectedItem ? _react2.default.createElement(
               _IconButton2.default,
-              { mini: true, onClick: this.handleClearSelection },
+              { onClick: this.handleClearSelection },
               _react2.default.createElement(_Clear2.default, null)
             ) : _react2.default.createElement(
               _IconButton2.default,
-              { mini: true, onClick: this.handleToggleMenu },
+              { onClick: this.handleToggleMenu },
               downshiftProps.isOpen ? _react2.default.createElement(_ArrowDropUp2.default, null) : _react2.default.createElement(_ArrowDropDown2.default, null)
             )
           ),

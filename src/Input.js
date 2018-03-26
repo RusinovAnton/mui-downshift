@@ -42,11 +42,11 @@ class Input extends Component {
             !disabled && (
               <InputAdornment position="end">
                 {!!downshiftProps.selectedItem ? (
-                  <IconButton mini onClick={this.handleClearSelection}>
+                  <IconButton onClick={this.handleClearSelection}>
                     <Clear />
                   </IconButton>
                 ) : (
-                  <IconButton mini onClick={this.handleToggleMenu}>
+                  <IconButton onClick={this.handleToggleMenu}>
                     {downshiftProps.isOpen ? <ArrowDropUp /> : <ArrowDropDown />}
                   </IconButton>
                 )}
