@@ -12,9 +12,7 @@ class Input extends Component {
   handleClearSelection = e => {
     this.props.downshiftProps.clearSelection();
 
-    // Hack to fix issue #9
-    this.input.focus();
-    // this.input.blur();
+    this.input.blur();
   };
 
   handleToggleMenu = e => {

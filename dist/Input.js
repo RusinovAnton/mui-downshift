@@ -67,9 +67,7 @@ var Input = function (_Component) {
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Input.__proto__ || Object.getPrototypeOf(Input)).call.apply(_ref, [this].concat(args))), _this), _this.handleClearSelection = function (e) {
       _this.props.downshiftProps.clearSelection();
 
-      // Hack to fix issue #9
-      _this.input.focus();
-      // this.input.blur();
+      _this.input.blur();
     }, _this.handleToggleMenu = function (e) {
       var _this$props$downshift = _this.props.downshiftProps,
           isOpen = _this$props$downshift.isOpen,
